@@ -185,8 +185,12 @@ html {
    border-radius: 50%;
    transform: var(--center) translate(52px, 0); 
 }
-.inner-arc {
-  animation: mymove 5s linear ;
+.inner-arc_start-a {
+  animation: mymove 2s linear ;
+}
+
+.inner-arc_end-a{
+  animation: spin 2s linear ;
 }
 .inner-arc {
  width: 220px;
@@ -214,13 +218,21 @@ position: absolute;
 
 .inner-moon-a span{position: absolute;color: white;transform: rotate(55deg); font-size: 30px; top: 6px; left: 17px;}
 
-/*@keyframes spin { 100% {transform: rotate(180deg); } }*/
+/*@keyframes mymove { 100% {transform: rotate(360deg); } }*/
 @keyframes mymove {
 
     
-  from { transform: var(--center) rotate(0deg)}
-  to { transform: var(--center) rotate(35deg)}
+  from { transform: var(--center) rotate(45deg)}
+  to { transform: var(--center) rotate(101deg)}
 }
+
+@keyframes spin {
+
+    
+  from { transform: var(--center) rotate(0deg)}
+  to { transform: var(--center) rotate(45deg)}
+}
+
 
 :root {
   --header-h: 40px;
