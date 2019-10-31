@@ -60,13 +60,13 @@
 		
 		/* Previous button */
 		$('.controls .circle-button-previous').click(function(e) {
-			carousel.cycleActive('circle-button-previous');
+			carousel.cycleActive('previous');
 			e.preventDefault();
 		});
 
 		/* Next button */
 		$('.controls .circle-button-next').click(function(e) {
-			carousel.cycleActive('circle-button-next');
+			carousel.cycleActive('next');
 			e.preventDefault();
 		});
 
